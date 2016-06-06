@@ -3,7 +3,7 @@
 ***
 ***  Author:       brotherband
 ***  Contact:      ....
-***  Version:      1.1
+***  Version:      2.3
 ***  Created:      5/6/16
 ***  Last Updated: 6/6/16
 ***
@@ -16,13 +16,10 @@ var userQuery = prompt("\nPlease enter the username you would like to apply the 
 var usersOnline = API.getUsers();
 
 for (var userList = 0; userList < usersOnline.length; userList++) {
-	if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
+if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
 		prompt("\n" + usersOnline[userList].username + "'s ID is:", usersOnline[userList].id);
-		break;
-	}
-
-	if (userList == usersOnline.length-1) {
+        break;
+	} else if (userList == usersOnline.length-1) {
 		alert("\n" + userQuery + " is not currently in this room.\n");
-		break;
 	}
 }
