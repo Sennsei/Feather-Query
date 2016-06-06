@@ -18,7 +18,7 @@ var usersOnline = API.getUsers();
 for (var userList = 0; userList < usersOnline.length; userList++) {
 	if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
 		prompt("\n" + usersOnline[userList].username + "'s ID is:", usersOnline[userList].id);
-        break;
+        	break;
 	} else if (userList == usersOnline.length-1) {
 		alert("\n'" + userQuery + "' is currently not in this room.\n");
 	}
