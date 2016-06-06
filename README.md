@@ -1,6 +1,7 @@
-# Plug.dj - Feather Query
+#Plug.dj - Feather Query
 
 > Feather query is a lightweight [plug.dj](https://www.plug.dj/superfuntime-3 "*Click Me* for the BEST community!") script which queries for a user's ID.
+---
 
 ######Installing the script:                                                                                          
 
