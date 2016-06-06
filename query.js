@@ -12,7 +12,8 @@
 ***  Protected under the MIT License
 *********************************************/
 
-var userQuery = prompt("\nPlease enter the username you would like to apply the ID Lookup on!\n     + Please Note: This query is capital sensitive!\n", "Example: brotherband").toUpperCase();
+var initQuery = prompt("\nPlease enter the username you would like to apply the ID Lookup on!\n     + Please Note: This query is capital sensitive!\n", "Example: brotherband");
+var userQuery = initQuery.toUpperCase();
 var usersInit = API.getUsers();
 var usersOnline = usersInit.toUpperCase();
 
