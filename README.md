@@ -18,3 +18,6 @@
 ######Notes:
 - [x] When using Feather Query the input _must_ contain the same characters as the user's username
 - [x] You do _not_ need to worry about capitalization of names
+
+> Copyright (c) 2016 Sennsei                                                                                                            
+> Protected under the [MIT License](https://opensource.org/licenses/MIT "Information on the MIT License")
