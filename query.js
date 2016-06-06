@@ -16,10 +16,6 @@ var userQuery = prompt("\nPlease enter the username you would like to apply the 
 var usersOnline = API.getUsers();
 
 for (var userList = 0; userList < usersOnline.length; userList++) {
-	if (userQuery ===  null) {
-		break;
-	}
-
 	if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
 		prompt("\n" + usersOnline[userList].username + "'s ID is:", usersOnline[userList].id);
 		break;
