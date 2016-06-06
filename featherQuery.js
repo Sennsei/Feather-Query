@@ -20,6 +20,6 @@ if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
 		prompt("\n" + usersOnline[userList].username + "'s ID is:", usersOnline[userList].id);
         break;
 	} else if (userList == usersOnline.length-1) {
-		alert("\n" + userQuery + " - is currently not in this room.\n");
+		alert("\n'" + userQuery + "' is currently not in this room.\n");
 	}
 }
