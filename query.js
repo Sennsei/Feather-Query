@@ -1,5 +1,5 @@
 /*********************************************
-***  Plug.dj Script - Username to ID Query
+***  Plug.dj Script - Feather Query
 ***
 ***  Author:       brotherband
 ***  Contact:      ....
@@ -12,18 +12,20 @@
 ***  Protected under the MIT License
 *********************************************/
 
-var initQuery = prompt("\nPlease enter the username you would like to apply the ID Lookup on!\n     + Please Note: This query is capital sensitive!\n", "Example: brotherband");
-var userQuery = initQuery.toUpperCase();
-var usersInit = API.getUsers();
-var usersOnline = usersInit.toUpperCase();
+var userQuery = prompt("\nPlease enter the username you would like to apply the ID Lookup on!\n     + Please Note: This query is capital sensitive!\n", "Example: brotherband");
+var usersOnline = API.getUsers();
 
 for (var userList = 0; userList < usersOnline.length; userList++) {
-	if (userQuery ==  null) {
-		console.log('No input recieved.')
-	} else if (usersOnline[userList].username == userQuery) {
-		prompt("\n" + userQuery + "'s ID is:", usersOnline[userList].id);
+	if (userQuery ===  null) {
 		break;
-	} else {
+	}
+
+	if (usersOnline[userList].username.toUpperCase() == userQuery.toUpperCase()) {
+		prompt("\n" + usersOnline[userList].username + "'s ID is:", usersOnline[userList].id);
+		break;
+	}
+
+	if (userList == usersOnline.length-1) {
 		alert("\n" + userQuery + " is not currently in this room.\n");
 		break;
 	}
