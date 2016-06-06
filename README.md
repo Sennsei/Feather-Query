@@ -8,7 +8,7 @@
 - [x] **Create** a bookmark                                                                                                              
 - [x] **Right** click the bookmark
 - [x] **Press** edit                                                                                                  
-- [x] **URL:** `javascript:(function(){$.getScript('https://rawgit.com/Sennsei/feather-query/master/query.js');}());`
+- [x] **URL:** `javascript:(function(){$.getScript('https://rawgit.com/Sennsei/Feather-Query/master/featherQuery.js');}());`
 
 ######Usage:
 - [x] **Click** the bookmark to run the script
